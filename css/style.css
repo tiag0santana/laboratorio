@@ -1,0 +1,16 @@
+#wrap{
+    width: 900px;
+    margin: 0 auto;
+}
+
+#fixP{
+    color: #FFF;
+}
+
+#breakLine{
+    float:right;
+}
+
+#footer{
+    background-color: #222;
+}
