@@ -2,3 +2,10 @@ body {
     background-image: url(../images/cream_pixels.png);
     background-repeat:repeat;
 }
+
+.has-tip {
+  border-bottom: dotted 1px #CCCCCC;
+  cursor: default;
+  font-weight: bold;
+  color: #333333;
+}
