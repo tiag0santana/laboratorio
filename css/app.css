@@ -1,10 +1,5 @@
 <!-- Custom Foundation Color -->
 
-body {
-    background-image: url(../images/cream_pixels.png);
-    background-repeat:repeat;
-}
-
 .has-tip {
   border-bottom: dotted 1px #CCCCCC;
   cursor: default;
@@ -19,4 +14,9 @@ h2{
 .top-bar-section ul li.active > a {
       background: #B32927 !important; /*Not proud :(*/
       color: #FFFFFF;
+}
+
+body {
+    background-image: url(../images/cream_pixels.png);
+    background-repeat:repeat;
 }
