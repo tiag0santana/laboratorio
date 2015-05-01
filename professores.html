@@ -42,8 +42,8 @@
                             <a href="">Membros</a>
                             <ul class="dropdown">
                                 <li class="active"><a href="#">Professores</a></li>
-                                <li><a href="#">Estudantes</a></li>
-                                <li><a href="#">Alumni</a></li>
+                                <li class=""><a href="#">Estudantes</a></li>
+                                <li class=""><a href="#">Alumni</a></li>
                             </ul>
                         </li>
                         <li class="has-dropdown">
@@ -69,8 +69,13 @@
                         <h2>Professores</h2>
                     </div>
                     
+                    <div data-alert class="alert-box secondary radius text-center large-6 columns" id="fixAlert" role="alert">
+                            <strong>Coloque o mouse sobre "Formação" para lê-lo.</strong>
+                    </div>
+                    
                     <!-- Professores -->
                     <div class="large-12 columns text-center">
+                        
                         <!-- Profile cards -->
                         
                         <!-- 1º Perfil -->
@@ -80,10 +85,11 @@
                                     <img src="images/membmale.gif" alt="profile image">
                                 </div>
                                 <div class="small-12 large-8 columns">
-                                    <h4>Nome Completo</h4>
-                                    <p>Curso/Formação</p>
-                                    <p>Area de Pesquisa</p>
-                                    <p><a href="#">LaTeX</a></p>
+                                    <h4>Allan Kardec</h4>
+                                    <p data-tooltip aria-haspopup="true" class="has-tip" title="Doutorado e Mestrado em Engenharia da Informação. Especialização em Pesquisa Em Processamento de Sinais Cardiacos. Graduação em Engenharia Eletrica.">
+                                            Formação
+                                        </p>
+                                    <p><a href=" http://lattes.cnpq.br/0492330410079141">LaTeX</a></p>
                                     <p><a href="mailto:nome@dominio.com?Subject=Contato%20Laboratorio" target="_blank">nome@dominio.com</a></p>
                                     <br />
                                 </div>
@@ -95,24 +101,17 @@
                         <div class="row">
                             <div class="profile-card">
                                 <div class="small-12 large-4 columns">
-                                    <img src="images/membfemale.gif" alt="profile image">
+                                    <img src="images/membmale.gif" alt="profile image">
                                 </div>
                                 <div class="small-12 large-8 columns">
-                                    <h4>Nome Completo</h4>
-                                    <p>Curso/Formação</p>
-                                    <p>Area de Pesquisa</p>
-                                    <p><a href="#">LaTeX</a></p>
+                                    <h4>Ewaldo Santana</h4>
+                                    <p data-tooltip aria-haspopup="true" class="has-tip" title="Doutorado e Mestrado em Engenharia Elétrica. Especialização em Matemática e Estatística. Graduação em Matemática">
+                                        Formação
+                                    </p>
+                                    <p><a href="http://lattes.cnpq.br/0660692009750374">LaTeX</a></p>
                                     <p><a href="mailto:nome@dominio.com?Subject=Contato%20Laboratorio" target="_blank">nome@dominio.com</a></p>
                                     <br />
                                 </div>
-                            </div>
-                        </div>
-                        
-                        <!-- 3º Perfil -->
-                        <br />
-                        <div class="row">
-                            <div class="profile-card">
-                                <h4 id="fixProfileCard">Não há pessoa(s) nesse grupo de membros.</h4>
                             </div>
                         </div>
                         

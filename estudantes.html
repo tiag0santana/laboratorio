@@ -12,7 +12,7 @@
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/foundation.css">
         <link rel="stylesheet" href="css/style.css">
-        <!-- If custom Foundation code is needed -->
+        <!-- Custom Foundation -->
         <link rel="stylesheet" href="css/app.css">
 
         <!-- JavaScript -->
@@ -37,16 +37,23 @@
                 <!-- Seção da topbar -->
                 <section class="top-bar-section">
                     <ul class="right">
-                        <li class="active"><a href="#">Início</a></li>
-                        <li class="has-dropdown">
+                        <li class=""><a href="#">Início</a></li>
+                        <li class="has-dropdown active">
                             <a href="">Membros</a>
                             <ul class="dropdown">
-                                <li><a href="#">Professores</a></li>
-                                <li><a href="#">Estudantes</a></li>
-                                <li><a href="#">Alumni</a></li>
+                                <li class=""><a href="#">Professores</a></li>
+                                <li class="active"><a href="#">Estudantes</a></li>
+                                <li class=""><a href="#">Alumni</a></li>
                             </ul>
                         </li>
-                        <li class=""><a href="membros.html">Publicações</a></li>
+                        <li class="has-dropdown">
+                            <a href="">Publicações</a>
+                            <ul class="dropdown">
+                                <li><a href="#">Dissertações</a></li>
+                                <li><a href="#">Revistas</a></li>
+                                <li><a href="#">Conferências</a></li>
+                            </ul>
+                        </li>
                         <li class=""><a href="contatos.html">Contatos</a></li>
                     </ul>
                 </section>
@@ -56,54 +63,169 @@
             <!-- Conteúdo -->
             <div class="row">
                 
-                <!-- Conteúdo principal -->
-                <div class="large-10 columns">
+                <div class="large-12 columns">
+                    
                     <div class="large-7 columns">
-                        <h2><a href="#">Bem-Vindo</a></h2>
+                        <h2>Estudantes</h2>
                     </div>
                     
-                    <!-- Divisão conteúdo -->
-                    
-                    <!-- Texto -->
-                    <div class="large-7 columns">
-                        <p class="text-justify">Bacon ipsum dolor amet sunt reprehenderit ribeye meatball tempor ullamco. Pork chop mollit sint, landjaeger ut kevin brisket pork cow eiusmod. Veniam cow ut laboris velit hamburger dolore porchetta. Tail incididunt ex quis filet mignon capicola. Est ham chuck, ribeye short ribs rump t-bone aute alcatra pastrami spare ribs. Tail incididunt ex quis filet mignon capicola. Est ham chuck, ribeye short ribs rump t-bone aute alcatra pastrami spare ribs.</p>
+                    <div data-alert class="alert-box secondary radius text-center large-6 columns" id="fixAlert" role="alert">
+                            <strong>Coloque o mouse sobre "Formação" para lê-lo.</strong>
                     </div>
                     
-                    <!-- Image -->
-                    <div class="medium-5 columns" role="img">
-                        <a href="#"><img src="http://placehold.it/400x300&text=[img]" data-reveal-id="labImg" /></a>
+                    <!-- Doutorado -->
+                    <div class="large-7 columns">
+                        <h3>Doutorado</h3>
+                    </div>
+                    
+                    <div class="large-12 columns text-center">
                         
-                        <!-- Close na Imagem ao Clicar -->
-                        <div id="labImg" class="reveal-modal" data-reveal aria-labelledby="teamImg" aria-hidden="true" role="img">
-                            <img src="http://placehold.it/800x400&text=[img]" />
-                            <a class="close-reveal-modal" aria-label="Close">&#215;</a>
+                        <!-- Profile cards -->
+                        
+                        <!-- 1º Perfil -->
+                        <div class="row">
+                            <div class="profile-card">
+                                <div class="small-12 large-4 columns">
+                                    <img src="images/membmale.gif" alt="profile image">
+                                </div>
+                                <div class="small-12 large-8 columns">
+                                    <h4>Allan Kardec</h4>
+                                    <p data-tooltip aria-haspopup="true" class="has-tip" title="Doutorado e Mestrado em Engenharia da Informação. Especialização em Pesquisa Em Processamento de Sinais Cardiacos. Graduação em Engenharia Eletrica.">
+                                            Formação
+                                        </p>
+                                    <p><a href=" http://lattes.cnpq.br/0492330410079141">LaTeX</a></p>
+                                    <p><a href="mailto:nome@dominio.com?Subject=Contato%20Laboratorio" target="_blank">nome@dominio.com</a></p>
+                                    <br />
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- 2º Perfil -->
+                        <br />
+                        <div class="row">
+                            <div class="profile-card">
+                                <div class="small-12 large-4 columns">
+                                    <img src="images/membmale.gif" alt="profile image">
+                                </div>
+                                <div class="small-12 large-8 columns">
+                                    <h4>Ewaldo Santana</h4>
+                                    <p data-tooltip aria-haspopup="true" class="has-tip" title="Doutorado e Mestrado em Engenharia Elétrica. Especialização em Matemática e Estatística. Graduação em Matemática">
+                                        Formação
+                                    </p>
+                                    <p><a href="http://lattes.cnpq.br/0660692009750374">LaTeX</a></p>
+                                    <p><a href="mailto:nome@dominio.com?Subject=Contato%20Laboratorio" target="_blank">nome@dominio.com</a></p>
+                                    <br />
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <br />
+                        
+                    </div>
+                    
+                    <!-- Mestrado -->
+                    <div class="large-7 columns">
+                        <h3>Mestrado</h3>
+                    </div>
+                    
+                    <div class="large-12 columns text-center">
+                        
+                        <!-- Profile cards -->
+                        
+                        <!-- 1º Perfil -->
+                        <div class="row">
+                            <div class="profile-card">
+                                <div class="small-12 large-4 columns">
+                                    <img src="images/membmale.gif" alt="profile image">
+                                </div>
+                                <div class="small-12 large-8 columns">
+                                    <h4>Allan Kardec</h4>
+                                    <p data-tooltip aria-haspopup="true" class="has-tip" title="Doutorado e Mestrado em Engenharia da Informação. Especialização em Pesquisa Em Processamento de Sinais Cardiacos. Graduação em Engenharia Eletrica.">
+                                            Formação
+                                        </p>
+                                    <p><a href=" http://lattes.cnpq.br/0492330410079141">LaTeX</a></p>
+                                    <p><a href="mailto:nome@dominio.com?Subject=Contato%20Laboratorio" target="_blank">nome@dominio.com</a></p>
+                                    <br />
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- 2º Perfil -->
+                        <br />
+                        <div class="row">
+                            <div class="profile-card">
+                                <div class="small-12 large-4 columns">
+                                    <img src="images/membmale.gif" alt="profile image">
+                                </div>
+                                <div class="small-12 large-8 columns">
+                                    <h4>Ewaldo Santana</h4>
+                                    <p data-tooltip aria-haspopup="true" class="has-tip" title="Doutorado e Mestrado em Engenharia Elétrica. Especialização em Matemática e Estatística. Graduação em Matemática">
+                                        Formação
+                                    </p>
+                                    <p><a href="http://lattes.cnpq.br/0660692009750374">LaTeX</a></p>
+                                    <p><a href="mailto:nome@dominio.com?Subject=Contato%20Laboratorio" target="_blank">nome@dominio.com</a></p>
+                                    <br />
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <br />
+                        
+                    </div>
+                    
+                    <!-- Graduação -->
+                    <div class="large-7 columns">
+                        <h3>Graduação</h3>
+                    </div>
+                    
+                    <div class="large-12 columns text-center">
+                        
+                        <!-- Profile cards -->
+                        
+                        <!-- 1º Perfil -->
+                        <div class="row">
+                            <div class="profile-card">
+                                <div class="small-12 large-4 columns">
+                                    <img src="images/membmale.gif" alt="profile image">
+                                </div>
+                                <div class="small-12 large-8 columns">
+                                    <h4>Allan Kardec</h4>
+                                    <p data-tooltip aria-haspopup="true" class="has-tip" title="Doutorado e Mestrado em Engenharia da Informação. Especialização em Pesquisa Em Processamento de Sinais Cardiacos. Graduação em Engenharia Eletrica.">
+                                            Formação
+                                        </p>
+                                    <p><a href=" http://lattes.cnpq.br/0492330410079141">LaTeX</a></p>
+                                    <p><a href="mailto:nome@dominio.com?Subject=Contato%20Laboratorio" target="_blank">nome@dominio.com</a></p>
+                                    <br />
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- 2º Perfil -->
+                        <br />
+                        <div class="row">
+                            <div class="profile-card">
+                                <div class="small-12 large-4 columns">
+                                    <img src="images/membmale.gif" alt="profile image">
+                                </div>
+                                <div class="small-12 large-8 columns">
+                                    <h4>Ewaldo Santana</h4>
+                                    <p data-tooltip aria-haspopup="true" class="has-tip" title="Doutorado e Mestrado em Engenharia Elétrica. Especialização em Matemática e Estatística. Graduação em Matemática">
+                                        Formação
+                                    </p>
+                                    <p><a href="http://lattes.cnpq.br/0660692009750374">LaTeX</a></p>
+                                    <p><a href="mailto:nome@dominio.com?Subject=Contato%20Laboratorio" target="_blank">nome@dominio.com</a></p>
+                                    <br />
+                                </div>
+                            </div>
                         </div>
                         
                     </div>
                     
-                    <!-- Continuação Texto -->
-                    <div class="large-12 columns">
-                        <p class="text-justify">Officia exercitation cillum, id tri-tip consectetur boudin nulla picanha pig laborum aliquip. Ribeye sed duis consequat tongue. Pancetta tongue lorem dolor, drumstick qui nulla cow eu. Elit meatball ut, ribeye non sausage ad chicken. Alcatra doner laboris laborum, nisi drumstick pancetta jowl.</p>
-
-                        <p class="text-justify">Brisket ham hock kevin, pork chop beef ribs biltong meatball swine picanha pork loin minim dolore. Flank brisket non excepteur kevin frankfurter. Dolore turducken anim proident, andouille minim pork loin ea ham hock in. Duis ground round lorem, capicola minim eu mollit ut. Do salami bresaola veniam leberkas. Laboris alcatra beef ribs ea, jowl jerky non tri-tip elit short loin cow cupidatat pig.</p>
-                    </div>
-                    
-                </div>
-                
-                <!-- Sidebar -->
-                <div class="small-2 columns">
-                    <p></p>
-                    <h5>Links Úteis</h5>
-                    <ul class="side-nav" role="navigation" title="Links Úteis">
-                        <li role="menuitem"><a href="#">CNPq</a></li>
-                        <li role="menuitem"><a href="#">FAPEMA</a></li>
-                        <li role="menuitem"><a href="#">LaTeX</a></li>
-                        <li role="menuitem"><a href="#">UEMA</a></li>
-                    </ul>
                 </div>
                 
             </div>
             
+            <br>
             <!-- Footer -->
             <footer class="row" id="footer">
                 <p class="subheader text-center fixP"><em>PIB - Processamento da Informação Biológica. © Todos os direitos reservados. 2015.</em></p>
