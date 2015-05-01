@@ -1,22 +1,22 @@
-<!-- Custom Foundation Color -->
+/* Custom Foundation Color */
 
-.has-tip {
-  border-bottom: dotted 1px #CCCCCC;
+body{
+    background-image: url(../images/cream_pixels.png);
+    background-repeat:repeat;
+}
+
+.has-tip{
+  border-bottom: solid 0px #2B2937 !important;
   cursor: default;
   font-weight: bold;
   color: #333333;
 }
 
-h2{
+h2, h3{
     color: #B32927;
 }
 
-.top-bar-section ul li.active > a {
-      background: #B32927 !important; /*Not proud :(*/
+.top-bar-section ul li.active > a{
+      background: #B32927 !important;
       color: #FFFFFF;
-}
-
-body {
-    background-image: url(../images/cream_pixels.png);
-    background-repeat:repeat;
 }
