@@ -113,17 +113,6 @@
     margin-bottom: 17px;
 }
 
-/*Cor tabela publicação*/
-/*Aceito - Sim*/
-.sim{
-    background-color: #DFF0D8;
-}
-
-/*Aceito - Não*/
-.nao{
-    background-color: #F2DEDE;
-}
-
 /*Fix Alert - Caixa*/
 #fixAlert{
     margin-left: 230px;
@@ -133,4 +122,9 @@ address{
     color: #B32927;
     font-style: normal;
     font-size: 14px;
+}
+
+/*Fix Panel - Contato*/
+#space{
+    padding-bottom: 53px;
 }
