@@ -6,12 +6,13 @@
         
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Título do Site</title>
+        <title>Publicações do PIB</title>
         
         <!-- CSS -->
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/foundation.css">
         <link rel="stylesheet" href="css/style.css">
+        <!-- Custom Foundation -->
         <link rel="stylesheet" href="css/app.css">
 
         <!-- JavaScript -->
@@ -29,23 +30,22 @@
             <nav class="top-bar" data-topbar role="navigation">
                 <ul class="title-area">
                     <li class="name">
-                        <h1><a href="#">SIGLA</a></h1>
+                        <h1><a href="#">PIB - Processamento da Informação Biológica</a></h1>
                     </li>
                 </ul>
                 
                 <!-- Seção da topbar -->
                 <section class="top-bar-section">
                     <ul class="right">
-                        <li class="active"><a href="#">Início</a></li>
+                        <li class=""><a href="index.html">Início</a></li>
                         <li class="has-dropdown">
                             <a href="">Membros</a>
                             <ul class="dropdown">
-                                <li><a href="#">Professores</a></li>
-                                <li><a href="#">Estudantes</a></li>
-                                <li><a href="#">Alumni</a></li>
+                                <li class=""><a href="professores.html">Professores e Equipe</a></li>
+                                <li class=""><a href="estudantes.html">Estudantes</a></li>
                             </ul>
                         </li>
-                        <li class=""><a href="membros.html">Publicações</a></li>
+                        <li class="active"><a href="#">Publicações</a></li>
                         <li class=""><a href="contatos.html">Contatos</a></li>
                     </ul>
                 </section>
@@ -59,19 +59,14 @@
                 <div class="large-12 columns">
                     
                     <div class="large-7 columns">
-                        <h2><a href="#">Publicações</a></h2>
+                        <h2>Publicações</h2>
                     </div>
                     
                     <div data-alert class="alert-box secondary radius text-center large-6 columns" id="fixAlert" role="alert">
-                            <strong>Coloque o mouse sobre "Resumo" para lê-lo.</strong>
+                            <strong>Coloque o mouse sobre Resumo/Abstract para lê-lo.</strong>
                     </div>
                     
                     <div class="large-12 columns">
-                        <!-- Info sobre abstrato -->
-                        <!--<div data-alert class="alert-box info radius text-center">
-                            <strong>Coloque o mouse sobre "Abstrato" para lê-lo.</strong>
-                        </div>
-                        -->
                         
                         <!-- Tabela com os artigos -->
                         <table role="grid" summary="Essa tabela mostra as publicações feitas pelos membros do laboratório.">
@@ -79,38 +74,54 @@
                                 <tr>
                                     <th>Nome do(s) Autor(es)</th>
                                     <th>Tema</th>
-                                    <th>Aceito?</th>
+                                    <th>Download</th>
                                 </tr>
                             </thead>
                             
                             <tbody>
-                                <tr>
-                                    <td>SOBRENOME, Nome Autor</td>
-                                    <td>Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit.
-                                        <!-- Chamada da tooltip -->
-                                        <span data-tooltip aria-haspopup="true" class="has-tip" title="Um resumo deve passar informações suficientes sobre todo o conteúdo do texto, possibilitando ao leitor a decisão de lê em sua totalidade. É solicitado que o resumo contenha objetivo, método, resultados e as conclusões do trabalho. O resumo deve ser escrito em parágrafo único, numa sequência corrente de frases lógicas sem nenhuma enumeração de tópicos. Quanto à extensão do resumo, deve estar entre 100 a 250 palavras.">
-                                            Resumo.
-                                        </span>
-                                    </td>
-                                    <td class="sim">Sim</td>
-                                </tr>
                                 
                                 <tr>
-                                    <td>SOBRENOME, Nome Autor. SOBRENOME, Nome Autor.</td>
-                                    <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam volutpat est ullamcorper tincidunt sagittis. Pellentesque pretium lorem eget magna volutpat euismod.</td>
-                                    <td class="nao">Não</td>
-                                </tr>
-                                
-                                <tr>
-                                    <td>SOBRENOME, Nome Autor. SOBRENOME, Nome Autor. SOBRENOME, Nome Autor.</td>
-                                    <td>Não há ninguém que ame a dor por si só, que a busque e queira tê-la, simplesmente por ser dor.
+                                    <td><strong>BARROS</strong>, Allan Kardec. <strong>CICHOCKI</strong>, Andrzej.</td>
+                                    <td>Extraction of Specific Signals with Tempora Structure.
                                         <!-- Chamada da tooltip -->
-                                        <span data-tooltip aria-haspopup="true" class="has-tip" title="A summary must pass enough information about the entire contents of the text, allowing the reader to read the decision in its entirety. It is requested that the summary contains objective, method, results and conclusions. The abstract should be written in one paragraph in a logical sequence of sentences without any
-enumeration of topics. As for the extension of the abstract should be between 100 to 250 words.">
+                                        <span data-tooltip aria-haspopup="true" class="has-tip" title="In this work we develop a very simple batch learning algorithm for semiblind extraction of a desired source signal with temporal structure from linear mixtures. Although we use the concept of sequential blind extraction of sources and independent component analysis, we do not carry out the extraction in a completely blind manner; neither do we assume that sources are statistically independent. In fact, we show that the a priori information about the autocorrelation function of primary sources can be used to extract the desired signals (sources of interest) from their linear mixtures. Extensive computer simulations and real data application experiments confirm the validity and high performance of the proposed algorithm.">
                                             Abstract.
                                         </span>
                                     </td>
-                                    <td class="sim">Sim</td>
+                                    <td><a href="publications/Extraction%20of%20Specific%20Signals%20with%20Temporal%20Structure.pdf">Link</a></td>
+                                </tr>
+                                
+                                <tr>
+                                    <td><strong>BARROS</strong>, Allan Kardec. <strong>YOSHIZAWA</strong>, Makoto. <strong>YASUDA</strong>, Yoshifumi.</td>
+                                    <td>Filtering Noncorrelated Noise in Impedance Cardiography.
+                                        <!-- Chamada da tooltip -->
+                                        <span data-tooltip aria-haspopup="true" class="has-tip" title="Impedance cardiography (ICG) may be altered by noises as respiration and movement artifacts, mainly during exercise. In this work, a scaled Fourier linear combiner (SFLC) event-related to the R-R interval of ECG is proposed. It estimates the deterministic component of the impedance cardiographic signal and removes the noises uncorrelated to this interval. The impedance cardiographic signal is modeled as Fourier series with the coefficients estimated by the least mean square (LMS) algorithm. Simulations have been carried out to evaluate the filter performance for different noise conditions. Moreover, the method capability to remove uncorrelated noises was also examined in physiological data obtained in rest and exercise, by synchronizing respiration and pedaling with a metronome. Analyzing the ICG power spectrum, it was concluded that the proposed filter could remove the noises that are not synchronized with heart rate.">
+                                            Abstract.
+                                        </span>
+                                    </td>
+                                    <td><a href="publications/Filtering%20Non-Correlated%20Noise%20in%20Impedance%20Cardiography.pdf">Link</a></td>
+                                </tr>
+                                
+                                <tr>
+                                    <td><strong>ALMEIDA</strong>, Aryfrance. <strong>BARROS</strong>, Allan Kardec.</td>
+                                    <td>Localização de faltas em sistemas de transmissão de alta tensão usando ICA.
+                                        <!-- Chamada da tooltip -->
+                                        <span data-tooltip aria-haspopup="true" class="has-tip" title="Vários métodos de localização de faltas em linhas de transmissão têm sido propostos na literatura, dos quais podemos destacar os métodos baseados na correlação cruzada, na transformada wavelet e no uso de redes neurais. O objetivo deste trabalho é mostrar um método alternativo baseado na utilização de análise de componentes independentes (ICA) para localizar a distância de faltas monofásicas, bifásicas, bifásicasterra e trifásicas em um sistema de transmissão de 500 kV, a partir de diferentes ângulos de incidência de falta em diferentes distâncias ao longo da linha de transmissão e com os sinais de faltas ou ondas viajantes submetidas a outras perturbações não correlacionadas com o sinal de falta desejado na localização da distância da falta. De acordo com os resultados obtidos com a simulação de um sistema de transmissão de 500 kV de alta tensão pelo software ATP (Alternative Transient Program) mostram que a metodologia proposta implementada através do software Matlab é uma ferramenta bastante eficiente na localização de faltas para todos os tipos de faltas.">
+                                            Resumo.
+                                        </span>
+                                    </td>
+                                    <td><a href="publications/Localiza%C3%A7%C3%A3o%20de%20faltas%20em%20sistemas%20de%20transmiss%C3%A3o%20de%20alta%20tens%C3%A3o%20usando%20ICA.pdf">Link</a></td>
+                                </tr>
+                                
+                                <tr>
+                                    <td><strong>SANTANA</strong>, Ewaldo. <strong>BARROS</strong>, Allan Kardec.</td>
+                                    <td>Um Modelo Para Redes Neuroniais Biologicamente Inspirado Baseado em Minimização de Divergência Local.
+                                        <!-- Chamada da tooltip -->
+                                        <span data-tooltip aria-haspopup="true" class="has-tip" title="Neste trabalho é proposto o desenvolvimento de uma rede neuronial com aprendizagem não supervisionada, para modelar a organização topográca do córtex visual primário. Para isto, estuda-se o comportamento dos campos receptivos do córtex visual primário (V1), e, para o modelamento da rede utilizam-se os conceito de divergência local e de interação entre neurônios vizinhos, bem como da característica de não linearidades dos neurônios. Para treinamento da rede desenvolveu-se um algoritmo de ponto fixo.">
+                                            Resumo.
+                                        </span>
+                                    </td>
+                                    <td><a href="publications/Um%20Modelo%20Para%20redes%20Neurais%20Biologicamente%20Inspirado%20Baseado%20em%20Minimiza%C3%A7%C3%A3o%20de%20Diverg%C3%AAncia%20Local.pdf">Link</a></td>
                                 </tr>
                             </tbody>
                             
@@ -123,8 +134,8 @@ enumeration of topics. As for the extension of the abstract should be between 10
             
             <!-- Footer -->
             <footer class="row" id="footer">
-                <p class="subheader text-center fixP"><em>SIGLA - Significado da Sigla. © Todos os direitos reservados. 2015.</em></p>
-                <p class="subheader text-center fixP"><em>UEMA - Universidade Estadual do Maranhão.</em></p>
+                <p class="subheader text-center fixP"><em>PIB - Processamento da Informação Biológica. © Todos os direitos reservados. 2015.</em></p>
+                <p class="subheader text-center fixP"><em>UFMA - Universidade Federal do Maranhão</em></p>
             </footer>
             
             
